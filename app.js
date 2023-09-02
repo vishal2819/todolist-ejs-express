@@ -19,7 +19,7 @@ const Item = mongoose.model("Item", itemsSchema);
 async function startServer() {
   try {
     await mongoose.connect(
-      "mongodb+srv://vishal_ramteke:dummyuser@cluster2.ixz0psa.mongodb.net/test",
+      "mongodb://localhost:27017/todolist-v2",
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,
